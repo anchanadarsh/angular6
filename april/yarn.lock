@@ -9,14 +9,21 @@
     "@angular-devkit/core" "0.6.3"
     rxjs "^6.0.0"
 
-"@angular-devkit/build-angular@~0.6.3":
-  version "0.6.3"
-  resolved "http://registry.npm.taobao.org/@angular-devkit/build-angular/download/@angular-devkit/build-angular-0.6.3.tgz#9b714f2f7fdd7422f990991c79444436d99898e3"
+"@angular-devkit/architect@0.6.8":
+  version "0.6.8"
+  resolved "http://registry.npm.taobao.org/@angular-devkit/architect/download/@angular-devkit/architect-0.6.8.tgz#977acc605aba45d21b95ca704cc99492e14299dd"
   dependencies:
-    "@angular-devkit/architect" "0.6.3"
-    "@angular-devkit/build-optimizer" "0.6.3"
-    "@angular-devkit/core" "0.6.3"
-    "@ngtools/webpack" "6.0.3"
+    "@angular-devkit/core" "0.6.8"
+    rxjs "^6.0.0"
+
+"@angular-devkit/build-angular@^0.6.8":
+  version "0.6.8"
+  resolved "http://registry.npm.taobao.org/@angular-devkit/build-angular/download/@angular-devkit/build-angular-0.6.8.tgz#ea108509f970efc9cd9087a47894c0164dd2d0c0"
+  dependencies:
+    "@angular-devkit/architect" "0.6.8"
+    "@angular-devkit/build-optimizer" "0.6.8"
+    "@angular-devkit/core" "0.6.8"
+    "@ngtools/webpack" "6.0.8"
     ajv "~6.4.0"
     autoprefixer "^8.4.1"
     cache-loader "^1.2.2"
@@ -66,13 +73,13 @@
   optionalDependencies:
     node-sass "^4.9.0"
 
-"@angular-devkit/build-optimizer@0.6.3":
-  version "0.6.3"
-  resolved "http://registry.npm.taobao.org/@angular-devkit/build-optimizer/download/@angular-devkit/build-optimizer-0.6.3.tgz#f455c44f34f56e3714449ca38f8a6c0ca8fdcfc7"
+"@angular-devkit/build-optimizer@0.6.8":
+  version "0.6.8"
+  resolved "http://registry.npm.taobao.org/@angular-devkit/build-optimizer/download/@angular-devkit/build-optimizer-0.6.8.tgz#9e18a4f447290d3a8e32df1110aac8b98b80dec2"
   dependencies:
     loader-utils "^1.1.0"
     source-map "^0.5.6"
-    typescript "~2.7.2"
+    typescript "~2.9.1"
     webpack-sources "^1.1.0"
 
 "@angular-devkit/core@0.6.3":
@@ -84,11 +91,27 @@
     rxjs "^6.0.0"
     source-map "^0.5.6"
 
+"@angular-devkit/core@0.6.8", "@angular-devkit/core@^0.6.0", "@angular-devkit/core@^0.6.3":
+  version "0.6.8"
+  resolved "http://registry.npm.taobao.org/@angular-devkit/core/download/@angular-devkit/core-0.6.8.tgz#3b09d97bd2588f0091df11921f7ed772431806aa"
+  dependencies:
+    ajv "~6.4.0"
+    chokidar "^2.0.3"
+    rxjs "^6.0.0"
+    source-map "^0.5.6"
+
 "@angular-devkit/schematics@0.6.3":
   version "0.6.3"
   resolved "http://registry.npm.taobao.org/@angular-devkit/schematics/download/@angular-devkit/schematics-0.6.3.tgz#70e22690ec5f3f0b94b846f280491aee559feff8"
   dependencies:
     "@angular-devkit/core" "0.6.3"
+    rxjs "^6.0.0"
+
+"@angular-devkit/schematics@0.6.8", "@angular-devkit/schematics@^0.6.0", "@angular-devkit/schematics@^0.6.3":
+  version "0.6.8"
+  resolved "http://registry.npm.taobao.org/@angular-devkit/schematics/download/@angular-devkit/schematics-0.6.8.tgz#6360a0271f1f422862bf932a03b3741e76ac5ff0"
+  dependencies:
+    "@angular-devkit/core" "0.6.8"
     rxjs "^6.0.0"
 
 "@angular/animations@^6.0.2":
@@ -175,11 +198,29 @@
   dependencies:
     tslib "^1.9.0"
 
-"@ngtools/webpack@6.0.3":
-  version "6.0.3"
-  resolved "http://registry.npm.taobao.org/@ngtools/webpack/download/@ngtools/webpack-6.0.3.tgz#baa9caaa8b21be16c30b2b15f92eb2afb8eb04c0"
+"@ng-toolkit/_utils@^1.1.16":
+  version "1.1.16"
+  resolved "http://registry.npm.taobao.org/@ng-toolkit/_utils/download/@ng-toolkit/_utils-1.1.16.tgz#62b70ca69be09093f6bd5aab4d8792af2bca8aed"
   dependencies:
-    "@angular-devkit/core" "0.6.3"
+    "@angular-devkit/core" "^0.6.0"
+    "@angular-devkit/schematics" "^0.6.0"
+    "@schematics/angular" "^0.6.0"
+    bugsnag "^2.3.1"
+
+"@ng-toolkit/universal@^1.1.16":
+  version "1.1.16"
+  resolved "http://registry.npm.taobao.org/@ng-toolkit/universal/download/@ng-toolkit/universal-1.1.16.tgz#481a1d5a0ac0c94ed34a80d94636f30a529cd5bb"
+  dependencies:
+    "@angular-devkit/core" "^0.6.3"
+    "@angular-devkit/schematics" "^0.6.3"
+    "@ng-toolkit/_utils" "^1.1.16"
+    "@schematics/angular" "^0.6.3"
+
+"@ngtools/webpack@6.0.8":
+  version "6.0.8"
+  resolved "http://registry.npm.taobao.org/@ngtools/webpack/download/@ngtools/webpack-6.0.8.tgz#a05bce526aee9da62bb230a95fba83fee99d0bca"
+  dependencies:
+    "@angular-devkit/core" "0.6.8"
     tree-kill "^1.0.0"
     webpack-sources "^1.1.0"
 
@@ -189,6 +230,14 @@
   dependencies:
     "@angular-devkit/core" "0.6.3"
     "@angular-devkit/schematics" "0.6.3"
+    typescript ">=2.6.2 <2.8"
+
+"@schematics/angular@^0.6.0", "@schematics/angular@^0.6.3":
+  version "0.6.8"
+  resolved "http://registry.npm.taobao.org/@schematics/angular/download/@schematics/angular-0.6.8.tgz#a8d1afc33e77160296b0a8b3d02f0ee4dfe9d1d2"
+  dependencies:
+    "@angular-devkit/core" "0.6.8"
+    "@angular-devkit/schematics" "0.6.8"
     typescript ">=2.6.2 <2.8"
 
 "@schematics/update@0.6.3":
@@ -725,6 +774,10 @@ backo2@1.0.2:
   version "1.0.2"
   resolved "http://registry.npm.taobao.org/backo2/download/backo2-1.0.2.tgz#31ab1ac8b129363463e35b3ebb69f4dfcfba7947"
 
+backo@^1.1.0:
+  version "1.1.0"
+  resolved "http://registry.npm.taobao.org/backo/download/backo-1.1.0.tgz#a36c4468923f2d265c9e8a709ea56ecdaff807e6"
+
 balanced-match@^1.0.0:
   version "1.0.0"
   resolved "http://registry.npm.taobao.org/balanced-match/download/balanced-match-1.0.0.tgz#89b4d199ab2bee49de164ea02b89ce462d71b767"
@@ -904,6 +957,10 @@ brorand@^1.0.1:
   version "1.1.0"
   resolved "http://registry.npm.taobao.org/brorand/download/brorand-1.1.0.tgz#12c25efe40a45e3c323eb8675a0a0ce57b22371f"
 
+browser-fingerprint@0.0.1:
+  version "0.0.1"
+  resolved "http://registry.npm.taobao.org/browser-fingerprint/download/browser-fingerprint-0.0.1.tgz#8df3cdca25bf7d5b3542d61545d730053fce604a"
+
 browserify-aes@^1.0.0, browserify-aes@^1.0.4:
   version "1.2.0"
   resolved "http://registry.npm.taobao.org/browserify-aes/download/browserify-aes-1.2.0.tgz#326734642f403dabc3003209853bb70ad428ef48"
@@ -982,6 +1039,17 @@ buffer@^4.3.0:
     base64-js "^1.0.2"
     ieee754 "^1.1.4"
     isarray "^1.0.0"
+
+bugsnag@^2.3.1:
+  version "2.4.1"
+  resolved "http://registry.npm.taobao.org/bugsnag/download/bugsnag-2.4.1.tgz#9ee3c9d0cc4dfe73bd3e022532b46e7ee0ebf823"
+  dependencies:
+    backo "^1.1.0"
+    cuid "^1.3.8"
+    json-stringify-safe "~5.0.1"
+    promise "7.x"
+    request "^2.81.0"
+    stack-trace "~0.0.9"
 
 builtin-modules@^1.0.0, builtin-modules@^1.1.1:
   version "1.1.1"
@@ -1417,6 +1485,10 @@ copy-webpack-plugin@^4.5.1:
     p-limit "^1.0.0"
     serialize-javascript "^1.4.0"
 
+core-js@^1.1.1:
+  version "1.2.7"
+  resolved "http://registry.npm.taobao.org/core-js/download/core-js-1.2.7.tgz#652294c14651db28fa93bd2d5ff2983a4f08c636"
+
 core-js@^2.2.0, core-js@^2.4.0, core-js@^2.5.4:
   version "2.5.6"
   resolved "http://registry.npm.taobao.org/core-js/download/core-js-2.5.6.tgz#0fe6d45bf3cac3ac364a9d72de7576f4eb221b9d"
@@ -1546,6 +1618,14 @@ cssauron@^1.4.0:
 cssesc@^0.1.0:
   version "0.1.0"
   resolved "http://registry.npm.taobao.org/cssesc/download/cssesc-0.1.0.tgz#c814903e45623371a0477b40109aaafbeeaddbb4"
+
+cuid@^1.3.8:
+  version "1.3.8"
+  resolved "http://registry.npm.taobao.org/cuid/download/cuid-1.3.8.tgz#4b875e0969bad764f7ec0706cf44f5fb0831f6b7"
+  dependencies:
+    browser-fingerprint "0.0.1"
+    core-js "^1.1.1"
+    node-fingerprint "0.0.2"
 
 cuint@^0.2.2:
   version "0.2.2"
@@ -3997,6 +4077,10 @@ no-case@^2.2.0:
   dependencies:
     lower-case "^1.1.1"
 
+node-fingerprint@0.0.2:
+  version "0.0.2"
+  resolved "http://registry.npm.taobao.org/node-fingerprint/download/node-fingerprint-0.0.2.tgz#31cbabeb71a67ae7dd5a7dc042e51c3c75868501"
+
 node-forge@0.7.5:
   version "0.7.5"
   resolved "http://registry.npm.taobao.org/node-forge/download/node-forge-0.7.5.tgz#6c152c345ce11c52f465c2abd957e8639cd674df"
@@ -4632,7 +4716,7 @@ promise-inflight@^1.0.1:
   version "1.0.1"
   resolved "http://registry.npm.taobao.org/promise-inflight/download/promise-inflight-1.0.1.tgz#98472870bf228132fcbdd868129bad12c3c029e3"
 
-promise@^7.1.1:
+promise@7.x, promise@^7.1.1:
   version "7.3.1"
   resolved "http://registry.npm.taobao.org/promise/download/promise-7.3.1.tgz#064b72602b18f90f29192b8b1bc418ffd1ebd3bf"
   dependencies:
@@ -4963,6 +5047,31 @@ request@2, request@^2.74.0, request@^2.78.0, request@^2.83.0:
     form-data "~2.3.1"
     har-validator "~5.0.3"
     hawk "~6.0.2"
+    http-signature "~1.2.0"
+    is-typedarray "~1.0.0"
+    isstream "~0.1.2"
+    json-stringify-safe "~5.0.1"
+    mime-types "~2.1.17"
+    oauth-sign "~0.8.2"
+    performance-now "^2.1.0"
+    qs "~6.5.1"
+    safe-buffer "^5.1.1"
+    tough-cookie "~2.3.3"
+    tunnel-agent "^0.6.0"
+    uuid "^3.1.0"
+
+request@^2.81.0:
+  version "2.87.0"
+  resolved "http://registry.npm.taobao.org/request/download/request-2.87.0.tgz#32f00235cd08d482b4d0d68db93a829c0ed5756e"
+  dependencies:
+    aws-sign2 "~0.7.0"
+    aws4 "^1.6.0"
+    caseless "~0.12.0"
+    combined-stream "~1.0.5"
+    extend "~3.0.1"
+    forever-agent "~0.6.1"
+    form-data "~2.3.1"
+    har-validator "~5.0.3"
     http-signature "~1.2.0"
     is-typedarray "~1.0.0"
     isstream "~0.1.2"
@@ -5573,6 +5682,10 @@ ssri@^5.2.4:
   dependencies:
     safe-buffer "^5.1.1"
 
+stack-trace@~0.0.9:
+  version "0.0.10"
+  resolved "http://registry.npm.taobao.org/stack-trace/download/stack-trace-0.0.10.tgz#547c70b347e8d32b4e108ea1a2a159e5fdde19c0"
+
 static-extend@^0.1.1:
   version "0.1.2"
   resolved "http://registry.npm.taobao.org/static-extend/download/static-extend-0.1.2.tgz#60809c39cbff55337226fd5e0b520f341f1fb5c6"
@@ -5961,6 +6074,10 @@ typedarray@^0.0.6:
 "typescript@>=2.6.2 <2.8", typescript@~2.7.2:
   version "2.7.2"
   resolved "http://registry.npm.taobao.org/typescript/download/typescript-2.7.2.tgz#2d615a1ef4aee4f574425cdff7026edf81919836"
+
+typescript@~2.9.1:
+  version "2.9.1"
+  resolved "http://registry.npm.taobao.org/typescript/download/typescript-2.9.1.tgz#fdb19d2c67a15d11995fd15640e373e09ab09961"
 
 uglify-es@^3.3.4:
   version "3.3.9"
