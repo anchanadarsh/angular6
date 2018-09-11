@@ -1,0 +1,19 @@
+<form action="" class="teaminputform">
+    <div class="row">
+        <div class="col-xs-6">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" [(ngModel)]="member_name" name="name">
+            </div>
+        </div>
+        <div class="col-xs-6">
+            <div class="form-group">
+                <label for="desgn">Designation:</label>
+                <input type="text" class="form-control" id="desgn" [(ngModel)]="member_designation" name="designation">
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <button type="submit" class="btn btn-primary btn-block" (click)="onAddMember()">Add New Member</button>
+        </div>
+    </div>
+</form>

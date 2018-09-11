@@ -1,0 +1,5 @@
+<span class="herodetail" *ngIf="hero">
+    <h2>{{hero.name}} Details</h2>
+    <p>id : {{hero.id}}</p>
+    <input type="text" [(ngModel)]="hero.name">
+</span>

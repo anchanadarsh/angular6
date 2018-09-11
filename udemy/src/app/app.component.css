@@ -1,0 +1,7 @@
+main{
+    padding-top: 20px;
+}
+.page_banner{
+    background-image: url(http://via.placeholder.com/1920x360);
+    background-size: cover;
+}

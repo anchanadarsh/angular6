@@ -1,0 +1,47 @@
+@import '../../_partial/global.scss';
+
+.sidebar {
+    width: 300px;
+    background-color: $color_primary;
+    display: inline-block;
+    padding: 15px;
+    box-shadow: 2px 0px 20px 0px transparentize($color_light_black, 0.85);
+    position: fixed;
+    height: 100%;
+
+    .side_head {
+        padding-bottom: 15px;
+        margin-bottom: 5px;
+        border-bottom: 1px solid transparentize($color_light_black, 0.7);
+
+        img {
+            max-width: 50px;
+            display: inline-block;
+        }
+
+        h3 {
+            display: inline-block;
+            margin: 0;
+            font-weight: bold;
+            width: calc(100% - 50px);
+            text-align: center;
+        }
+    }
+
+    .side_links {
+        span {
+            background-color: transparent;
+            padding: 15px 0;
+            display: block;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            font-weight: bold;
+
+            &:hover {
+//                background-color: transparentize($color_secondary, 0.4);
+                color: $color_secondary;
+            }
+        }
+    }
+}

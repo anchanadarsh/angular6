@@ -1,0 +1,8 @@
+@import '../../_partial/global.scss';
+
+.main_content {
+    background-color: $color_main_bg;
+    margin-left: 300px;
+    width: calc(100% - 300px);
+    min-height: 100vh;
+}

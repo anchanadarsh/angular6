@@ -1,13 +1,24 @@
 <header>
     <app-header></app-header>
 </header>
-<div class="container">
+<!--
+<section class="page_banner">
+    <img src="http://via.placeholder.com/1920x360" alt="" class="img-responsive">
+</section>
+<main class="container">
     <div class="row">
-        <div class="col-xs-3">
+        <div class="col-xs-12 col-sm-3">
             <app-sidebar></app-sidebar>
         </div>
-        <div class="col-xs-9">
+        <div class="col-xs-12 col-sm-9">
             <app-maincontent></app-maincontent>
         </div>
     </div>
-</div>
+</main>
+-->
+
+<section>
+   <div class="container-fuid">
+       <router-outlet></router-outlet>
+   </div>
+</section>

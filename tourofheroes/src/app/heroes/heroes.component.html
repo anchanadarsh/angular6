@@ -1,0 +1,5 @@
+<ul class="herolist">
+    <li *ngFor="let hero of heroes, let i = index" (click)="selectHero(hero)">
+        <span>{{hero.id}}</span>{{hero.name | uppercase}}
+    </li>
+</ul>

@@ -1,0 +1,17 @@
+<div class="container">
+    <app-form-element (onMemberAdded)="addtolist($event)"></app-form-element>
+    <div class="existing_members">
+        <h3 class="text-center">Existing Member List</h3>
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Designation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="app-member-element" *ngFor="let teammember of teammembers" [member]="teammember"></tr>
+            </tbody>
+        </table>
+    </div>
+</div>

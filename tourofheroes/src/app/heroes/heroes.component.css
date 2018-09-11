@@ -1,0 +1,26 @@
+ul.herolist {
+    padding-left: 0;
+    display: inline-block;
+}
+
+.herolist li {
+    list-style-type: none;
+    background: #ddd;
+    margin-bottom: 10px;
+    min-width: 200px;
+    cursor: pointer;
+}
+
+.herolist li:hover {
+    background: #bbb;
+}
+
+.herolist li span{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 10px;
+    text-align: center;
+    background: rgba(95, 158, 160, 0.9);
+}

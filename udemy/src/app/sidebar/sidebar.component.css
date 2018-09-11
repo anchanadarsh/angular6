@@ -1,4 +1,26 @@
-.sidebar_cont{
+.sidebar_cont {
     height: 60vh;
-    background: #9d56ff
+    background: #222222
+}
+
+.sidebar_menu_head{
+    background: #060606;
+    padding: 15px;
+    color: white;
+    border-bottom: 1px solid #333;
+}
+.sidebar_cont ul {
+    padding: 0;
+}
+
+.sidebar_cont li {
+    list-style-type: none;
+    padding: 15px;
+    color: white;
+    border-bottom: 1px solid #333;
+    cursor: pointer;
+}
+
+.sidebar_cont li:hover{
+    background: #333;
 }

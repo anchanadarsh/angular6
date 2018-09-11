@@ -1,0 +1,26 @@
+<div class="container">
+    <table class="table table-hover table-bordered">
+        <thead>
+            <tr>
+                <th>Sr.No</th>
+                <th>Category</th>
+                <th>Product-id</th>
+                <th>Title</th>
+                <th>Image</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor='let product of productslist.productList ; index as i'>
+                <td>{{i+1}}</td>
+                <td>{{product.albumId}}</td>
+                <td>{{product.id}}</td>
+                <td>{{product.title}}</td>
+                <td><img src="{{product.url}}" width="100px" class='img-responsive'></td>
+                <td><button id='edit_{{product.id}}' class="btn btn-primary">Edit</button></td>
+                <td><button id='delete_{{product.id}}' (click)='deleteProd(i)' class="btn btn-danger">Delete</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

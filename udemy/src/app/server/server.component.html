@@ -1,3 +1,26 @@
-<p>
-  server works!
-</p>
+<div class="row">
+    <div class="col-xs-6">
+        <label>Username</label>
+        <input type="text" class="form-control" [(ngModel)]='username'>
+    </div>
+    <div class="col-xs-6">
+        <label>Password</label>
+        <input type="password" class="form-control" [(ngModel)]='password'>
+    </div>
+    <div class="col-xs-6">
+        <br>
+        <button class="btn btn-primary" (click)='showDetails()'>Show Details</button>
+        <button class="btn btn-danger" (click)='resetDetails()'>Reset Details</button>
+    </div>
+    <div class="col-xs-12" *ngIf='clickCount % 2 === 0 ? false : true'>
+        <br>
+        <p>Username : {{username}}</p>
+        <p>Password : {{password}}</p>
+    </div>
+    <div class="col-xs-12">
+        <br>
+        <ul>
+            <li *ngFor='let click of clickCountLog' [ngClass]='{blue_bg : click > 5}'>{{click}}</li>
+        </ul>
+    </div>
+</div>

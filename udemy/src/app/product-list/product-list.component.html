@@ -1,0 +1,35 @@
+<main>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="page_banner">
+                <img src="http://via.placeholder.com/1920x360" alt="" class="img-responsive">
+            </div>
+        </div>
+    </div>
+
+    <div class="container product_list_area">
+        <div class="row">
+            <div class="col-xs-12 col-sm-3">
+                <ul class="product_list_sidebar">
+                    <li>Categories</li>
+                    <li *ngFor="let product of products.productList">{{product.albumId}}</li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-9">
+                <div class="row">
+                    <div class="col-xs-6 col-sm-4" *ngFor="let product of products.productList">
+                        <div class="prod_box">
+                           <span class="prod_cat">{{product.albumId}}</span>
+                            <div class="img_box">
+                                <img src="{{product.url}}" alt="" class="img-responsive">
+                            </div>
+                            <div class="title_box">
+                                <h5>{{product.title}}</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
